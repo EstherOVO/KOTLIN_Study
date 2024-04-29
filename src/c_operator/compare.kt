@@ -1,7 +1,7 @@
 package c_operator
 
 // Money 클래스, 돈의 양을 비교하는 비교 가능 클래스
-data class Money(val amount : Int) : Comparable<Money> {
+data class Money(val amount: Int) : Comparable<Money> {
     override fun compareTo(other: Money) : Int {
         return this.amount - other.amount
     }

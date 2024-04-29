@@ -19,8 +19,8 @@ fun main() {
 //  동일성 비교는 === 연산자 사용 : 자바의 == 연산과 동일한 기능(참조 주소 값 비교)
 
 //  같은 값의 내용을 다른 문자열 객체로 생성
-    val str1 : String = String("홍길동".toCharArray())
-    val str2 : String = String("홍길동".toCharArray())
+    val str1: String = String("홍길동".toCharArray())
+    val str2: String = String("홍길동".toCharArray())
 
     val isEqual = str1 == str2  // 동등 비교, 문자열 내용 비교 → true
     val isSame = str1 === str2  // 동일 비교, 메모리 주소 비교 → false
