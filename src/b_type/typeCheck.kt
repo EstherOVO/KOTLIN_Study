@@ -25,4 +25,14 @@ fun main() {
     } else {
         obj.length  // 문자열 캐스팅
     }
+
+//  as 연산자 : 강제로 타입을 캐스팅
+    val num : Any = 1234    // "1234"로 변경하면 ClassCastException 발생 X
+    val numStr = num as String  // ClassCastException
+//  Int → String
+
+//  as? 연산자 : 안전한 캐스팅
+//  만약 해당 타입으로 캐스팅이 되지 않을 경우 ClassCastException을 발생시키는 대신 null을 리턴
+    val safeNumStr = num as? String
+    println("캐스팅 결과 : " + safeNumStr)
 }
