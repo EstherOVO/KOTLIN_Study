@@ -28,7 +28,7 @@ fun main() {
 
 //  as 연산자 : 강제로 타입을 캐스팅
     val num: Any = 1234    // "1234"로 변경하면 ClassCastException 발생 X
-    val numStr = num as String  // ClassCastException
+//  val numStr = num as String  // ClassCastException
 //  Int → String
 
 //  as? 연산자 : 안전한 캐스팅
