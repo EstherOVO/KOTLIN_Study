@@ -16,9 +16,9 @@ fun main() {
 
 //  명시적 타입 표시
 //  자바와의 차이점 : 타입이 '변수명 :' 뒤에 선언
-    val byte : Byte = 127
-    val int : Int = 12345678
-    val long : Long = 1234564523L
+    val byte: Byte = 127
+    val int: Int = 12345678
+    val long: Long = 1234564523L
 
 //  코틀린에서는 원시타입(Primitive Type) 예약어가 존재하지 않는다.
 //  코틀린의 기본 타입
@@ -36,7 +36,7 @@ fun main() {
 
 //  특수 자료형
 //  1. Any : 모든 클래스의 최상위 루트 클래스(자바에서는 Object에 해당)
-    var hello : Any = "Hello, Kotlin"
+    var hello: Any = "Hello, Kotlin"
 //  Any 클래스는 hashCode(), toString(), equals() 메서드를 제공한다. (Object이기 때문)
     hello.hashCode()
     hello.toString()
@@ -46,13 +46,13 @@ fun main() {
     hello = true
 
 //  2. Unit 타입 : 함수가 아무 값을 리턴하지 않을 때(자바의 경우 void에 해당)
-    fun printHello(message : String) : Unit {
+    fun printHello(message: String) : Unit {
         println(message)
     }
 //  Unit을 선언하지 않고 생략해도 컴파일러가 이해한다.
 
 //  3. Nothing 타입 : 함수가 정상적으로 종료되지 않을 때(예외 발생, 무한 루프 등)
-    fun failFunction(message : String) : Nothing {
+    fun failFunction(message: String) : Nothing {
 //      리턴 값이 없이 예외 발생 등
         throw IllegalArgumentException(message)
     }

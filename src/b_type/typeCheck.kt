@@ -5,7 +5,7 @@ package b_type
 
 fun main() {
 
-    val obj : Any = "문자열"
+    val obj: Any = "문자열"
 
 //  is 연산자 : 객체가 특정 타입의 인스턴스인지 검사하고, 결과를 true / false로 리턴
     if (obj is String) {
@@ -27,7 +27,7 @@ fun main() {
     }
 
 //  as 연산자 : 강제로 타입을 캐스팅
-    val num : Any = 1234    // "1234"로 변경하면 ClassCastException 발생 X
+    val num: Any = 1234    // "1234"로 변경하면 ClassCastException 발생 X
     val numStr = num as String  // ClassCastException
 //  Int → String
 
