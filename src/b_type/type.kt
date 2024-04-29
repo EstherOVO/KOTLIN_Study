@@ -7,6 +7,7 @@ fun main() {
     var name = "홍길동"
     var age = 30
     var isAdult = true
+//  암시적으로 추론된 타입으로 선언 : 정적 타입
 
 //  name = 30    추론된 Type이 String이기 때문에, 문자열만 대입 가능
     name = "전우치"
@@ -14,6 +15,7 @@ fun main() {
     age = 40
 
 //  명시적 타입 표시
+//  자바와의 차이점 : 타입이 '변수명 :' 뒤에 선언
     val byte : Byte = 127
     val int : Int = 12345678
     val long : Long = 1234564523L
