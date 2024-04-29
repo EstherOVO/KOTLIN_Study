@@ -2,7 +2,7 @@ package e_control
 
 fun main() {
 
-//  if, else if, if-else-if
+//  if, if-else, if-else-if
 //  기본적으로 자바와 사용법이 같다.
 
 //  차이점
@@ -26,6 +26,34 @@ fun main() {
 
 //  표현식(Expression)
     val status = if (age > 19) "성인" else "미성년자"
-
     println("표현식 : ${status}입니다.")
+//  코틀린에서는 if-else를 표현식으로 사용 가능하기 때문에 3항 연산자가 없다.
+
+//  if문 분기에 따라 반환(Java 방식)
+    fun getPassOrFail1(score: Int) : String {
+        if (score >= 60) {
+            return "Pass"
+        } else {
+            return "Fail"
+        }
+    }
+
+//  if 표현식을 반환 값으로 적용 가능
+    fun getPassOrFail2(score: Int) : String {
+        return if (score >= 60) {
+            "Pass"
+        } else {
+            "Fail"
+        }
+    }
+
+//  표현식으로 간략히 표현(3개 함수 모두 동일하게 적용)
+    fun getPassOrFail3(score: Int) : String {
+        return if (score >= 60) "Pass" else "Fail"
+    }
+
+    val score = 60
+    println(getPassOrFail1(score))
+    println(getPassOrFail2(score))
+    println(getPassOrFail3(score))
 }
