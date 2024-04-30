@@ -14,7 +14,7 @@ package g_null_safety
 
 val cityPopulation = mapOf("Seoul" to "10,000,000", "Tokyo" to "9,000,000")
 
-예상 입출력 :
+출력 예시 :
 - 사용자 입력 : "Seoul"
 - 출력 : "Seoul의 인구는 10,000,000명입니다."
 - 사용자 입력 : "" (공백)
