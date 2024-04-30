@@ -37,8 +37,8 @@ fun maxK4(a: Int, b: Int) = if (a > b) a else b
 fun main() {
 
 //  함수 호출 방식은 동일
-    maxK1(1, 2)
-    maxK2(3, 4)
-    maxK3(4, 5)
-    maxK4(7, 6)
+    println(maxK1(1, 2))
+    println(maxK2(3, 4))
+    println(maxK3(4, 5))
+    println(maxK4(7, 6))
 }
