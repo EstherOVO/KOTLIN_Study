@@ -2,7 +2,7 @@ package j_class
 
 // 커스텀(사용자 정의) Getter, Setter
 class Rectangle (var width: Int, var height: Int) {
-    //  정사각형 여부를 판단하는 프로퍼티
+//  정사각형 여부를 판단하는 프로퍼티
     val isSquare: Boolean
         get() = width == height // 단일 행 커스텀 게터
 //  get() {
@@ -10,7 +10,7 @@ class Rectangle (var width: Int, var height: Int) {
 //  }
 //  프로퍼티 하단부에 Getter와 Setter를 커스터마이징하는 블록을 생성 가능
 
-    //  정사각형의 너비를 계산하는 프로퍼티
+//  정사각형의 너비를 계산하는 프로퍼티
     var area: Int
         get() = width * height
         set(value) {
