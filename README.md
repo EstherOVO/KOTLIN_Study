@@ -177,6 +177,7 @@
 - 익명 객체를 만들 때는 `object: 타입이름`을 사용한다.
 
 # ▨ 중첩 클래스(Nested Class) ▨
+## :pushpin: 중첩 클래스(Nested Class)
 1. 중첩 클래스(Nested Class)
    - 자바의 `static` 중첩 클래스와 유사하게 동작
    - 외부 클래스의 인스턴스에 대한 참조가 없다.
@@ -186,3 +187,6 @@
    - 외부 클래스의 인스턴스와 연결되어 있다.
    - 바깥 클래스를 참조하려면 `inner` 키워드를 사용해야 한다.
    - 이름이 같은 바깥 클래스를 참조하려면 `this@OuterClass`(`this@바깥클래스명.참조변수`) 사용
+
+# ▨ 여러 가지 클래스(data class, enum class, sealed class) ▨
+## 
