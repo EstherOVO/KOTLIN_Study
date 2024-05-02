@@ -7,6 +7,9 @@ import java.util.Objects
 // 생성자는 선언부
 data class MemberDTO(val name: String, val age: Int) {
 
+/*
+    equals(), hashCode, toString을 오버라이딩 하고 싶다면...
+
     override fun hashCode(): Int {
         return Objects.hashCode(name)
     }
@@ -14,6 +17,7 @@ data class MemberDTO(val name: String, val age: Int) {
     override fun toString(): String {
         return "Name = ${name} : Age = ${age}"
     }
+*/
 }
 
 fun main() {
