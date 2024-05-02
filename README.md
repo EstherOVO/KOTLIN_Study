@@ -171,4 +171,7 @@
 # ▨ Object 키워드 ▨
 ## :pushpin: Object 키워드
 - `companion object` : 자바의 `static` 키워드에 대응하는 개념
-- 클래스 내부에 `static` 멤버를 정의할 때 사용
+  - 클래스 내부에 `static` 멤버를 정의할 때 사용
+  - `companion object`는 하나의 객체로 간주되기 때문에, 다른 타입을 상속 및 구현받을 수 있다.
+- `object` 키워드를 사용해서 만든 클래스는 싱글톤 클래스가 된다.
+- 익명 객체를 만들 때는 `object: 타입이름`을 사용한다.
