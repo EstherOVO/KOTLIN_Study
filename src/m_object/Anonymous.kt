@@ -15,7 +15,7 @@ private fun move(movable: Movable) {
 
 fun main() {
 
-    move(object : Movable {
+    move(object: Movable {
 
         override fun move() {
             println("움직입니다.")
