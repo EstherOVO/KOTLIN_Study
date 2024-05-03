@@ -7,7 +7,7 @@ package z_exercise.extend
 1. <Animal>이라는 추상 클래스를 생성하고, 모든 동물이 공통적으로 가져야 할 'eat()' 메서드를 추상 메서드로 선언하세요.
 2. <FlyingAnimal>과 <SwimmingAnimal>이라는 두 개의 인터페이스를 생성하세요.
    - <FlyingAnimal>에는 'fly()' 메서드가 있어야 하며, 기본 구현으로 "날개짓 합니다."를 출력하도록 설정하세요.
-   - <SwimmingAnimal>에는 'fly()' 메서드가 있어야 하며, 기본 구현으로 "헤엄을 칩니다."를 출력하도록 설정하세요.
+   - <SwimmingAnimal>에는 'swim()' 메서드가 있어야 하며, 기본 구현으로 "헤엄을 칩니다."를 출력하도록 설정하세요.
 3. <Bird>, <Fish>, <Duck> 세 클래스를 생성하여 각각 적절한 클래스와 인터페이스를 상속/구현하세요.
    - <Bird>는 <Animal>과 <FlyingAnimal>을 상속/구현해야 합니다.
    - <Fish>는 <Animal>과 <SwimmingAnimal>을 상속/구현해야 합니다.
