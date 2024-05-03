@@ -155,7 +155,7 @@
   - `private` : 선언된 클래스에서만 접근 가능
 - 코틀린 : `(public)`, `protected`, `internal`, `private`
   - `public` : 모든 곳에서 접근 가능
-  - `protected` : ***선언된 클래스*** 또는 하위 클래스에서만 접근 가능(파일 최상단에서는 사용 불가능)
+  - `protected` : ***선언된 클래스*** 또는 하위 클래스에서만 접근 가능(파일 최상단(Top-Level)에서는 사용 불가능)
   - `internal` : ***같은 모듈***에서만 접근 가능
   - `private` : 선언된 클래스에서만 접근 가능(같은 파일 내에서만 접근 가능)
 
@@ -173,7 +173,7 @@
 - `companion object` : 자바의 `static` 키워드에 대응하는 개념
   - 클래스 내부에 `static` 멤버를 정의할 때 사용
   - `companion object`는 하나의 객체로 간주되기 때문에, 다른 타입을 상속 및 구현받을 수 있다.
-- `object` 키워드를 사용해서 만든 클래스는 싱글톤 클래스가 된다.
+- `object` 키워드를 사용해서 만든 클래스는 싱글톤 클래스(단 하나의 인스턴스만 갖는 클래스)가 된다.
 - 익명 객체를 만들 때는 `object: 타입이름`을 사용한다.
 
 # ▨ 중첩 클래스(Nested Class) ▨
@@ -188,5 +188,25 @@
    - 바깥 클래스를 참조하려면 `inner` 키워드를 사용해야 한다.
    - 이름이 같은 바깥 클래스를 참조하려면 `this@OuterClass`(`this@바깥클래스명.참조변수`) 사용
 
-# ▨ 여러 가지 클래스(data class, enum class, sealed class) ▨
-## 
+# ▨ 여러 가지 클래스(Data Class, Enum Class, Sealed Class) ▨
+## :pushpin: Data Class
+- 클래스 앞에 `data` 키워드를 선언하여 사용
+- 자동으로 `equals()`, `hashCode()`, `toString()` 등이 구현
+- `copy()` 메서드, `componentN()` 메서드가 생성
+- 구조분해 선언 사용 가능
+- 데이터 보관 목적으로 사용되는 클래스의 보일러플레이트 코드(Boilerplate Code) 자동 생성
+- VO, DTO 등에 효율적으로 사용
+- 주의사항
+  - data class는 최소 한 개의 매개변수가 있는 주 생성자 필요하다.
+  - data class는 상속을 할 수 없다.
+  - `abstract`, `open`, `inner` 등의 키워드 사용할 수 없다.
+
+## :pushpin: Enum Class
+- 고정된 상수 집합
+- 각 항목이 Enum 클래스의 인스턴스로 존재
+- 정해진 값들 중에서만 선택할 수 있도록 강제
+- 프로퍼티와 메서드를 가질 수 있다.
+- `when` 문과 함께 사용하게 될 경우 모든 경우를 처리할 수 있게 컴파일러가 항목을 검사한다.
+- 누락된 항목이 없도록 컴파일 시점에 알게 된다.
+
+## :pushpin: Sealed Class
