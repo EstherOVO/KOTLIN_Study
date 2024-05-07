@@ -12,9 +12,9 @@ fun main() {
 
 //  let 사용하지 않은 경우
     var name2: String? = null
-    val length2 = if (name != null) {
-        println("제 이름은 ${name}입니다.")
-        name.length
+    val length2 = if (name2 != null) {
+        println("제 이름은 ${name2}입니다.")
+        name2.length
     } else {
         null
     }
@@ -50,8 +50,8 @@ fun main() {
 
 //  apply 사용하지 않은 경우
     val person2 = Person()
-    person.name = "홍길동"
-    person.age = 30
+    person2.name = "홍길동"
+    person2.age = 30
 
 //////////////////////////////////////////////////////////
 
